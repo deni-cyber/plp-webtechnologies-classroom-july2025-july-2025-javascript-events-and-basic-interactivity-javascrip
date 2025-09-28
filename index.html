@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>modal-page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </header>
+<body>
+    <section id="fsection">
+        <h1>
+            🎉 Part 1: JavaScript Event Handling and Interactive Elements
+        </h1>
+        <h2> Testing Event Listeners</h2>
+        <div class="buttons-container">
+            <button class="button" id="hoverme">Hover Me</button>
+            <button class="button" id="clickme">Click Me to change bg color</button>
+        </div>
+        <hr>
+        <div>
+            <label>which color did you like</label>
+            <input type="text" class="input" id="input" placeholder="eg:green">
+            <p id="inputdisplay"></p>
+        </div>
+        <hr>
+        <button class="button" id="openbtn"> open</button>
+        <div class="modal" id="modal"> 
+            <div class="modal-header">
+                <div class="modal-title">How modals work</div>
+                <div class="button" id="closebtn">close</div>
+            </div>
+            <div class="modal-text">
+                A modal in JavaScript works by showing and hiding a hidden element on the page when triggered. 
+                Normally, the modal is styled with CSS to stay hidden (display: none), and JavaScript is used to 
+                toggle its visibility when a user clicks an “open” button. A “close” button (or clicking outside the modal) 
+                then runs another JavaScript function to hide it again. This way, JavaScript controls when the modal appears on 
+                top of the page content and when it disappears, without reloading the page.
+            </div>
+        </div>
+    </section>
+       
+    <section>
+        <h1>🎮 Part 2: Building Interactive Elements</h1>
+        <h2>A simple dropdown menu</h2>
+        <div class="dropdown">
+            <button id="dropdownBtn" class="button">Menu ⬇️</button>
+            <div id="dropdownContent" class="dropdown-content">
+                <a href="#" data-tab="home">Home</a>
+                <a href="#" data-tab="services">Services</a>
+                <a href="#" data-tab="about">About</a>
+                <a href="#" data-tab="contact">Contact</a>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="home" class="tab-pane">
+                <h3>Welcome to the Home page!</h3>
+                <p> 
+                    We have nothing to sell,
+                    we never sell anything or offer anything, however we can offer a piece of advice,
+                    "no man shall live forever, except the one who have chosen death to be part of his living"-Doodle Master.(BC)
+
+                    note: BC: "Before Computers"
+                    
+
+                </p>
+            </div>
+            <div id="services" class="tab-pane">
+                Here are our Services.
+            </div>
+            <div id="about" class="tab-pane">About us "nothing".</div>
+            <div id="contact" class="tab-pane">Contact us at nothing@mail.com.</div>
+        </div>
+    </section>
+
+    <section>
+        <h1>📋✅ Part 3: Form Validation with JavaScript</h1>
+        <form id="signupForm" novalidate>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
+                <span class="error" id="confirmPasswordError"></span>
+            </div>
+
+            <button type="submit">Sign Up</button>
+            <p id="formSuccess" style="color: green;"></p>
+        </form>
+
+
+    </section>
+
+
+
+</body>
+</html>
+
+
+
+
+
